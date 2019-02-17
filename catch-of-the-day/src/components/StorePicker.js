@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { getFunName } from "../helpers.js";
 
 class StorePicker extends React.Component {
@@ -9,6 +10,9 @@ class StorePicker extends React.Component {
   // }
 
   myInput = React.createRef();
+  static propTypes = {
+    history: PropTypes.object
+  };
 
   // The new way allows you to turn the below method into an arrow function - which will result in the method becomgin a property
   // Recommended method for binding - turn the method to a property

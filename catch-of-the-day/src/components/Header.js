@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 const Header = props => (
   <header className="top">
@@ -15,6 +16,11 @@ const Header = props => (
     </h3>
   </header>
 );
+
+Header.propTypes = {
+  tagline: PropTypes.string.isRequired
+
+};
 
 // Destructured props - accessing only that property
 // const Header = ({ tagline }) => (
